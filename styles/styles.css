@@ -125,6 +125,11 @@ body {
   background-color: #ffffff;
 }
 
+.button-socials{
+  color: #000000;
+  text-decoration: none;
+}
+
 .phone{
   font-size: 40px;
   line-height: 40px;
@@ -193,6 +198,20 @@ body {
   line-height: 21px;
 }
 
+.catalog-filter-scale{
+  font-size: 18px;
+  line-height: 24px;
+  text-align: right;
+}
+
+.button-filter{
+  background-color: #82B3D3;
+}
+
+.button-reset{
+  background-color: rgba(0,0,0,0);
+}
+
 .search-results-header h2{
   font-size: 30px;
   line-height: 36px;
@@ -202,7 +221,7 @@ body {
 }
 
 .button-light{
-  color: #000000;
+  color: ##333333;
   background-color: #ffffff;
 }
 
@@ -222,14 +241,24 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-align: left;
+  color: #333333;
 }
 
 .hotels-card-price{
   font-size: 18px;
   line-height: 21px;
   text-align: right;
+  color: #333333;
 }
 
+.hotels-card-raiting{
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  background-color: #F2F2F2;
+}
 
 .pagination-link {
   font-size: 20px;
