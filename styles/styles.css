@@ -33,6 +33,11 @@ body {
   background-color: #ffffff;
 }
 
+/*для стики футер*/
+.main-container{
+  flex-grow: 1;
+}
+
 .button{
   display: inline-block;
   font-family: "PT Sans", sans-serif;
