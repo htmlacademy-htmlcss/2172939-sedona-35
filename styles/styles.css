@@ -146,12 +146,8 @@ body {
   color: #000000;
   background-color: #ffffff;
   text-decoration: none;
-
-}
-
-.navigation-item-user{
-  min-width: 12px;
-  min-height: 22px;
+  min-width: 44px;
+  min-height: 64px;
 }
 
 .navigation-item-user:last-child{
@@ -382,12 +378,16 @@ body {
   list-style-type: none;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
+  width: 190px;
 }
 
 .footer-social-item{
   margin: 0;
   padding: 0 10px;
+  width: 47px;
+  height: 40px;
 }
 
 .button-socials{
@@ -428,6 +428,7 @@ body {
   background-image: url("/images/filter-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  margin-bottom: 0;
 }
 
 .inner-header-breadcrumbs{
@@ -481,6 +482,7 @@ body {
   display: flex;
   flex-direction: row;
   min-width: 1060px;
+  margin: 0 auto;
 }
 
 .catalog-filter-group{
@@ -531,6 +533,7 @@ body {
   border: none;
   display: flex;
   flex-direction: column;
+  margin-left: auto;
 }
 
 
@@ -540,8 +543,19 @@ body {
   text-align: right;
 }
 
+.filter-buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .button-filter{
   background-color: #82B3D3;
+}
+
+.button-small.button-filter{
+  margin-bottom: 32px;
 }
 
 .button-reset{
@@ -549,11 +563,20 @@ body {
 }
 
 /*результаты поиска*/
-.sorting{
+.sorting-container{
   display: flex;
-  margin: 50px 70px 40px;
+  margin: 50px 0 40px;
   padding: 0;
   width: 1060px;
+  align-items: center;
+  background: orange;
+}
+
+.sorting-container .button{
+  width: 48px;
+  height: 48px;
+  background: orange;
+
 }
 
 .all-search-results{
@@ -562,6 +585,7 @@ body {
 
 .search-results{
   width: 1060px;
+  margin: 0 auto;
 }
 
 .search-results-header h2{
@@ -576,9 +600,14 @@ body {
   text-transform: uppercase;
 }
 
+/*вернуться*/
 .select-control{
-  padding: 14px 20px;
-  padding-right: 131px;
+  padding: 14px auto 14px 20px;
+  width: 294px;
+  height: 49px;
+  font-size: 18px;
+  line-height: 21px;
+  border: 2px solid #E5E5E5;;
 }
 
 .button-light{
@@ -626,6 +655,12 @@ body {
   display: flex;
   flex-direction: row;
   list-style-type: none;
+  width: 1060px;
+  margin: 40px 0 60px;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .pagination-link {
@@ -636,6 +671,11 @@ body {
   color: #ffffff;
   background-color: #82B3D3;
   text-decoration: none;
+  display: block;
+  padding-top: 12px;
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
 }
 
 .pagination-current {
