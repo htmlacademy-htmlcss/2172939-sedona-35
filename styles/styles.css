@@ -227,6 +227,11 @@ body {
   list-style-type: none;
 }
 
+.reasons-list-row{
+  display: flex;
+  flex-direction: row;
+}
+
 .reasons-item{
   width: 400px;
   min-height: 384px;
