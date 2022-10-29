@@ -27,11 +27,8 @@ html {
 }
 
 body {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  margin: 0;
   min-height: 100%;
-  width: 1200px;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -52,6 +49,7 @@ body {
 
 .container{
   width: 1200px;
+  min-height: 100vh;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -138,16 +136,20 @@ body {
   margin-left: auto;
   margin-right: 70px;
   list-style-type: none;
+  justify-content: center;
+  align-items: center;
 }
 
 .navigation-link-user{
-  display: block;
+  display: flex;
   width: 44px;
   color: #000000;
   background-color: #ffffff;
   text-decoration: none;
   min-width: 44px;
   min-height: 64px;
+  justify-content: center;
+  align-items: center;
 }
 
 .navigation-item-user:last-child{
@@ -180,13 +182,14 @@ body {
   background-image: url('../images/welcome-background.jpg');
   background-size: 100% auto;
   background-repeat: no-repeat;
+  padding-top: 51px;
 }
 
 .logo-welcome-title{
   display: block;
   margin: 0 auto;
   padding: 0;
-  padding-top: 51px;
+
 }
 
 /*причины*/
@@ -225,7 +228,6 @@ body {
 
 .reasons-list-row{
   display: flex;
-  flex-direction: row;
 }
 
 .reasons-item{
@@ -331,7 +333,6 @@ body {
 
 .subscribe-form{
   display: flex;
-  flex-direction: row;
 }
 
 .email-field{
@@ -354,20 +355,12 @@ body {
 /*футер*/
 .page-footer{
   display: flex;
-  flex-direction: row;
+  width: 1060px;
+  margin: 0 auto;
   color: #000000;
   background-color: #ffffff;
-  width: 1060px;
-  margin: 0 auto;
-}
-
-.page-footer-container{
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  width: 1060px;
   min-height: 50px;
-  margin: 0 auto;
   padding: 40px 0 30px;
   align-items: center;
 }
@@ -377,22 +370,23 @@ body {
   padding: 0;
   list-style-type: none;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
   width: 190px;
 }
 
 .footer-social-item{
   margin: 0;
-  padding: 0 10px;
-  width: 47px;
-  height: 40px;
+  padding: 0;
 }
 
 .button-socials{
   color: #000000;
   text-decoration: none;
+  width: 47px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .phone{
@@ -401,6 +395,12 @@ body {
   text-align: center;
   color: #000000;
   text-decoration: none;
+}
+
+.footer-about-logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*фон в "причинах"*/
@@ -420,7 +420,6 @@ body {
 /*страница с гостиницами*/
 .inner-header-container{
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   margin: 0 auto;
   min-height: 412px;
@@ -451,7 +450,6 @@ body {
 
 .breadcrumbs{
   display: flex;
-  flex-direction: row;
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -480,7 +478,6 @@ body {
 
 .catalog-filter{
   display: flex;
-  flex-direction: row;
   min-width: 1060px;
   margin: 0 auto;
 }
@@ -588,6 +585,12 @@ body {
   margin: 0 auto;
 }
 
+.search-results-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .search-results-header h2{
   margin: 0;
   padding: 0;
@@ -613,6 +616,9 @@ body {
 .button-light{
   color: #333333;
   background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hotels-card{
@@ -653,7 +659,6 @@ body {
 
 .pagination{
   display: flex;
-  flex-direction: row;
   list-style-type: none;
   width: 1060px;
   margin: 40px 0 60px;
