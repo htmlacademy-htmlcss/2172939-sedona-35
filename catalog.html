@@ -125,14 +125,16 @@
                 <!-- FIELD Стоимость scale/range -->
                 <fieldset class="catalog-filter-price">
                   <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                  <label class="control">
-                  <input type="text" placeholder="от" value="0" class="catalog-filter-scale">
-                    от
-                  </label>
-                  <label class="control">
-                  <input type="text" placeholder="до" value="9000" class="catalog-filter-scale">
-                  до
-                  </label>
+                  <div class="catalog-filter-all-scale">
+                    <label class="control">
+                    <input type="text" placeholder="от" value="0" class="catalog-filter-scale">
+                      от
+                    </label>
+                    <label class="control">
+                    <input type="text" placeholder="до" value="9000" class="catalog-filter-scale">
+                    до
+                    </label>
+                  </div>
                   <label class="control">
                   <input type="range" min="0" max="10" class="range-filter">
                   </label>
@@ -148,15 +150,13 @@
           <!-- SEARCH RESULTS -->
           <section class="search-results">
             <div class="sorting-container">
-              <div class="search-results-header">
-                <h2>Найдено гостиниц: 38</h2>
-              </div>
-              <div class="search-results-header">
-                <select class="select-control" aria-label="Сортировка">
-                  <option value="cheap">Сначала дешевые</option>
-                  <option value="expensive">Сначала дорогие</option>
-                  <option value="popular">Сначала популярные</option>
-                </select>
+              <h2 class="search-results-title">Найдено гостиниц: 38</h2>
+              <select class="select-control" aria-label="Сортировка">
+                <option value="cheap">Сначала дешевые</option>
+                <option value="expensive">Сначала дорогие</option>
+                <option value="popular">Сначала популярные</option>
+              </select>
+              <div class="search-results-buttons">
                 <a href="#" class="button button-light">
                   <span class="visually-hidden">Показать таблицу</span>
                   <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#000">
