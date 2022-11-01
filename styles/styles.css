@@ -85,6 +85,8 @@ body {
 .page-header{
   color: #000000;
   background-color: #ffffff;
+  display: flex;
+  align-items: flex-start;
 }
 
 /*навигация*/
@@ -131,6 +133,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   max-width: 312px;
+  max-height: 64px;
   margin: 0;
   padding: 0;
   margin-left: auto;
@@ -180,7 +183,7 @@ body {
   min-height: 485px;
   background-color: #ffffff;
   background-image: url('../images/welcome-background.jpg');
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   padding-top: 51px;
 }
@@ -314,7 +317,7 @@ body {
   text-align: center;
   color: #ffffff;
   background-image: url('../images/subscribe-background.jpg');
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -631,7 +634,8 @@ body {
 /*вернуться*/
 .select-control{
   margin-right: 70px;
-  padding: 14px auto 14px 20px;
+  padding-bottom: 14px;
+  padding-left: 20px;
   width: 294px;
   height: 49px;
   font-size: 18px;
