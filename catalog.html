@@ -157,19 +157,19 @@
                 <option value="popular">Сначала популярные</option>
               </select>
               <div class="search-results-buttons">
-                <a href="#" class="button button-light">
+                <a href="#" class="button-light">
                   <span class="visually-hidden">Показать таблицу</span>
                   <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#000">
                     <path d="M4 0H0v6h4V0Zm12 0h-4v6h4V0Zm-6 0H6v6h4V0ZM4 8H0v6h4V8Zm12 0h-4v6h4V8Zm-6 0H6v6h4V8Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs>
                   </svg>
                 </a>
-                <a href="#" class="button button-light">
+                <a href="#" class="button-light">
                   <span class="visually-hidden">Показать слайдшоу</span>
                   <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#000">
                     <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs>
                   </svg>
                 </a>
-                <a href="#" class="button button-light">
+                <a href="#" class="button-light">
                   <span class="visually-hidden">Показать список</span>
                   <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#000">
                     <path d="M2 0H0v2h2V0Zm14 0H4v2h12V0ZM2 4H0v2h2V4Zm14 0H4v2h12V4ZM2 8H0v2h2V8Zm14 0H4v2h12V8ZM2 12H0v2h2v-2Zm14 0H4v2h12v-2Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs>
@@ -179,10 +179,12 @@
             </div>
             <!-- SEARCH RESULTS- HOTELS CARDS -->
             <div class="all-search-results">
-              <ul class="search-results-hotels-card">
+              <ul class="hotels-list">
                 <li class="hotels-card">
-                  <a href="#" class="hotels-card-link">
+                  <a href="#" class="hotels-card-link-image">
                     <img src="images/hotels-raiting/hotel-1.jpg" alt="Amara Resort & Spa." class="hotels-card-image" width="300" height="212">
+                  </a>
+                  <a href="#" class="hotels-card-link-title">
                     <h3 class="hotels-card-title">Amara Resort & Spa</h3>
                   </a>
                   <span class="hotels-card-group">Гостиница</span>
@@ -191,12 +193,14 @@
                   <button class="button button-small hotels-card-button button-favorite">в избранное</button>
                   <div>
                     <img src="images/hotels-raiting/star-4.svg" alt="Кол-во звезд у гостиницы 4." class="hotels-card-stars" width="140" height="37">
-                    <span class="hotels-card-raiting">Рейтинг: 8,5</span>
                   </div>
+                  <span class="hotels-card-raiting">Рейтинг: 8,5</span>
                 </li>
                 <li class="hotels-card">
-                  <a href="#" class="hotels-card-link">
+                  <a href="#" class="hotels-card-link-image">
                     <img src="images/hotels-raiting/hotel-2.jpg" alt="Villas at Poco Diablo." class="hotels-card-image" width="300" height="212">
+                  </a>
+                  <a href="#" class="hotels-card-link-title">
                     <h3 class="hotels-card-title">Villas at Poco Diablo</h3>
                   </a>
                   <span class="hotels-card-group">Гостиница</span>
@@ -205,12 +209,14 @@
                   <button class="button button-small hotels-card-button button-favorite button-favorite-active">в избранном</button>
                   <div>
                     <img src="images/hotels-raiting/star-4.svg" alt="Кол-во звезд у гостиницы 4." class="hotels-card-stars" width="140" height="37">
-                    <span class="hotels-card-raiting">Рейтинг: 9,2</span>
                   </div>
+                  <span class="hotels-card-raiting">Рейтинг: 9,2</span>
                 </li>
                 <li class="hotels-card">
-                  <a href="#" class="hotels-card-link">
+                  <a href="#" class="hotels-card-link-image">
                     <img src="images/hotels-raiting/hotel-3.jpg" alt="Desert Quail Inn." class="hotels-card-image" width="300" height="212">
+                  </a>
+                  <a class="hotels-card-link-title">
                     <h3 class="hotels-card-title">Desert Quail Inn</h3>
                   </a>
                   <span class="hotels-card-group">Гостиница</span>
@@ -219,12 +225,14 @@
                   <button class="button button-small hotels-card-button button-favorite">в избранное</button>
                   <div>
                     <img src="images/hotels-raiting/star-3.svg" alt="Кол-во звезд у гостиницы 3." class="hotels-card-stars" width="140" height="37">
-                    <span class="hotels-card-raiting">Рейтинг: 6,9</span>
                   </div>
+                  <span class="hotels-card-raiting">Рейтинг: 6,9</span>
                 </li>
                 <li class="hotels-card">
-                  <a href="#" class="hotels-card-link">
+                  <a href="#" class="hotels-card-link-image">
                     <img src="images/hotels-raiting/hotel-4.jpg" alt="GreenTree Inn." class="hotels-card-image" width="300" height="212">
+                  </a>
+                  <a class="hotels-card-link-title">
                     <h3 class="hotels-card-title">GreenTree Inn</h3>
                   </a>
                   <span class="hotels-card-group">Гостиница</span>
@@ -233,8 +241,8 @@
                   <button class="button button-small hotels-card-button button-favorite">в избранное</button>
                   <div>
                     <img src="images/hotels-raiting/star-2.svg" alt="Кол-во звезд у гостиницы 2." class="hotels-card-stars" width="140" height="37">
-                    <span class="hotels-card-raiting">Рейтинг: 5,0</span>
                   </div>
+                  <span class="hotels-card-raiting">Рейтинг: 5,0</span>
                 </li>
               </ul>
             </div>
