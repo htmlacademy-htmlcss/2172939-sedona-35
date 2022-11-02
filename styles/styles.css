@@ -69,9 +69,9 @@ body {
   text-transform: uppercase;
   background-color: #756157;
   border: none;
+  cursor: pointer;
   border-radius: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 8px 50px;
 }
 
 .button-big{
@@ -80,11 +80,6 @@ body {
   line-height: 36px;
 }
 
-.button-small{
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 20px;
-}
 
 /*хедер*/
 
@@ -171,6 +166,10 @@ body {
   text-align: center;
   color: #ffffff;
   background-color: #7DB54F;
+}
+
+.button.button-navigation{
+  padding: 8px 34px;
 }
 
 /*главная страница*/
@@ -307,10 +306,6 @@ body {
   padding: 0;
   margin-top: 54px;
   margin-bottom: 96px;
-}
-
-.button-search{
-  padding: 8px 50px;
 }
 
 /*подписка*/
@@ -546,7 +541,7 @@ body {
   margin-bottom: 32px;
   padding: 0;
   margin-right: 70px;
-  margin-left: 70px;
+  margin-left: auto;
   border: none;
   display: flex;
   flex-direction: column;
@@ -568,15 +563,12 @@ body {
 .filter-buttons{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
 .button-filter{
   background-color: #82B3D3;
-}
-
-.button-small.button-filter{
   margin-bottom: 32px;
 }
 
@@ -709,6 +701,10 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-align: right;
+}
+
+.button.hotels-card-button{
+  padding: 8px 0;
 }
 
 .hotels-card-stars{
