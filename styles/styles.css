@@ -145,6 +145,7 @@ body {
 }
 
 .navigation-link-user{
+  position: relative;
   display: flex;
   width: 44px;
   color: #000000;
@@ -158,6 +159,16 @@ body {
 
 .navigation-item-user:last-child{
   margin-left: 20px;
+}
+
+.navigation-icon{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #000000;
 }
 
 .header-icon-number{
@@ -586,7 +597,7 @@ body {
   justify-content: center;
 }
 
-.sorting-container .button{
+.sorting-container.button{
   width: 48px;
   height: 48px;
 }
@@ -630,7 +641,7 @@ body {
   border: 2px solid #E5E5E5;
 }
 
-.button-light{
+.card-grid-toggle{
   color: #333333;
   background-color: #ffffff;
   display: flex;
@@ -642,7 +653,7 @@ body {
   border-radius: 4px;
 }
 
-.button-light:not(:last-child){
+.card-grid-toggle:not(:last-child){
   margin-right: 8px;
 }
 
