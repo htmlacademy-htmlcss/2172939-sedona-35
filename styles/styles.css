@@ -73,6 +73,7 @@ body {
   cursor: pointer;
   border-radius: 4px;
   padding: 8px 50px;
+  outline: none;
 }
 
 .button:hover,
@@ -302,6 +303,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  text-align: center;
   list-style-type: none;
   position: relative;
 }
@@ -395,6 +397,8 @@ body {
 }
 
 .services-item {
+  padding: 0;
+  padding-bottom: 81px;
   width: 400px;
   min-height: 384px;
   display: flex;
@@ -611,14 +615,20 @@ body {
   color: #83b3d3;
 }
 
-.button-socials-icon:hover,
-.button-socials-icon:focus {
+.button-socials-icon:hover {
   color: #68a2ca;
-  outline: none;
 }
 
 .button-socials-icon:active {
   color: rgba(104, 162, 202, 0.3);
+}
+
+.button-socials:focus {
+  outline: none;
+}
+
+.button-socials:focus .button-socials-icon {
+  color: #68a2ca;
 }
 
 .phone {
@@ -642,14 +652,22 @@ body {
 
 .phone:hover,
 .phone:focus,
-.footer-about-logo-icon:hover,
-.footer-about-logo-icon:focus {
+.footer-about-logo-icon:hover {
   color: #756157;
+  outline: none;
 }
 
 .phone:active,
 .footer-about-logo-icon:active {
   color: rgba(117, 97, 87, 0.3);
+}
+
+.footer-about-logo:focus {
+  outline: none;
+}
+
+.footer-about-logo:focus .footer-about-logo-icon{
+  color: #756157;
 }
 
 /*модельое окно*/
@@ -999,6 +1017,10 @@ body {
   margin-right: auto;
 }
 
+.tooltip-toggle:focus {
+  outline: none;
+}
+
 .tooltip-toggle:hover + .tooltip-text,
 .tooltip-toggle:focus + .tooltip-text {
   display: block;
@@ -1280,7 +1302,8 @@ body {
   border: none;
   border-radius: 4px 0 0 4px;
   width: 143px;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 
 .range-input-max {
@@ -1296,7 +1319,8 @@ body {
   border: none;
   border-radius: 0 4px 4px 0;
   width: 143px;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 
 .range-input-min:hover,
@@ -1326,7 +1350,8 @@ body {
 .range-input-min::-webkit-inner-spin-button,
 .range-input-max::-webkit-outer-spin-button,
 .range-input-max::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -1476,7 +1501,8 @@ body {
   background-image: url("../images/icons-catalog-main/icon-select-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 18px center;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .select-control:hover {
@@ -1523,6 +1549,7 @@ body {
 
 .card-grid-toggle:focus {
   border: 2px solid #68a2ca;
+  outline: none;
 }
 
 
@@ -1653,6 +1680,7 @@ body {
 .pagination-link:hover,
 .pagination-link:focus {
   background-color: #68a2ca;
+  outline: none;
 }
 
 .pagination-link:active {
