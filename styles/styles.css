@@ -798,6 +798,7 @@ body {
   background-image: url("../images/modal/icon-calendar.svg");
   background-repeat: no-repeat;
   background-position: center right 22px;
+  box-sizing: border-box;
 }
 
 .modal-date-field:hover {
